@@ -26,12 +26,13 @@ public class SingletonRequestQueue {
         return requestQueue;
     }
     public static synchronized SingletonRequestQueue getInstance(Context context){
-        if(rqInstance == null){
+
             rqInstance = new SingletonRequestQueue(context);
-        }
+
         return rqInstance;
     }
     public void addToRequestQueue(Request request){
         requestQueue.add(request);
+        System.out.print("HUU");
     }
 }

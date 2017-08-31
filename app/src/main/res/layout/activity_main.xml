@@ -122,4 +122,13 @@
         android:layout_alignBottom="@+id/locLongitude"
         android:layout_alignLeft="@+id/txtLatitude"
         android:layout_alignStart="@+id/txtLatitude" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:onClick="onStopButtonClick"
+        android:text="Stop" />
 </RelativeLayout>
