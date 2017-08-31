@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashanttanksali.csc750_project1.MainActivity">
+
+    <EditText
+        android:id="@+id/txtIpAddress"
+        android:layout_width="326dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="111dp"
+        android:layout_above="@+id/txtUsername"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername"
+        android:layout_marginBottom="55dp" />
+
+    <TextView
+        android:id="@+id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host:"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="57dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/txtIpAddress"
+        android:layout_alignLeft="@+id/txtIpAddress"
+        android:layout_alignStart="@+id/txtIpAddress" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:layout_above="@+id/txtUsername"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="232dp"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="onStartButtonClick"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="331dp"
+        android:layout_marginBottom="85dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_above="@+id/txtJsonOutput"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername" />
+
+    <TextView
+        android:id="@+id/txtJsonOutput"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="404dp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignLeft="@+id/locLongitude"
+        android:layout_alignStart="@+id/locLongitude" />
+
+    <TextView
+        android:id="@+id/locLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Latitude"
+        tools:text="Latitude"
+        android:layout_above="@+id/locLongitude"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
+
+    <TextView
+        android:id="@+id/locLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtJsonOutput"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart"
+        android:layout_marginBottom="11dp"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/txtLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/locLatitude"
+        android:layout_alignBottom="@+id/locLatitude"
+        android:layout_toEndOf="@+id/btnStart"
+        android:layout_toRightOf="@+id/btnStart" />
+
+    <TextView
+        android:id="@+id/txtLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/locLongitude"
+        android:layout_alignLeft="@+id/txtLatitude"
+        android:layout_alignStart="@+id/txtLatitude" />
+</RelativeLayout>
